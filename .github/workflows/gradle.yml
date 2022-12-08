@@ -58,5 +58,5 @@ jobs:
       run: >
         aws deploy create-deployment --application-name be-58-replicaset01
         --deployment-config-name CodeDeployDefault.AllAtOnce
-        --deployment-group-name be-58-replicaset01
+        --deployment-group-name be-58-replicaset01-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
